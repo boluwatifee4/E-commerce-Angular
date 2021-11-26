@@ -1,0 +1,49 @@
+<div class="card-top  shadow-sm">
+<ul>
+    <li>
+            <a (click)="filter('')">
+                <img src="assets/all-items.png" alt="">
+            </a>
+            <h6>All Products</h6>
+    </li>
+<li>
+    <div (click)="filter('electronics')">
+        <a >
+            <img src="assets/electronics.jpg" alt="">
+        </a>
+        <h6>Electronics</h6>
+    </div>
+</li>
+<li>
+    <div  (click)="filter('fashion')">
+        <a> 
+            <img src="assets/fashion.jpg" alt="">
+        </a>
+        <h6>Fashion</h6>
+    </div>
+</li>
+<li>
+    <div (click)="filter('jewelery')">
+        <a >
+            <img src="assets/jewelry.jpg" alt="">
+        </a>
+        <h6>Jewelry</h6>
+    </div>
+</li>
+   
+</ul>
+</div>
+
+<div class="ctn wears">
+    <div class="rw">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title' " class="r">
+            <div class="card  ">
+                <img src="{{item.image}}" alt="">
+                <h5>{{item.title}}</h5>
+                <p>{{item.description}}</p>
+                <h6><Strong>Price:</Strong> ${{item.price}}</h6>
+                <button class="btn" (click)="addToCart(item)">Add To Cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<header class="shadow">
+    <div class="logo">
+      <i class="fas fa-cloud-meatball"></i>
+      <h1>Bima Stores</h1>
+      <input type="text"  [(ngModel)]="searchTerm" (keyup)="search($event)"placeholder="Search Products"><span> <i class="fas fa-search" id="search" (click)="iconFunction()"></i></span>
+      <div class="Mq" *ngIf="icon">
+          <h5 class="badge" (click)="modalFunction()">X</h5>
+        <input class="mq" type="text"  [(ngModel)]="searchTerm" (keyup)="search($event)"placeholder="Search Products">
+      </div>
+      
+    </div>
+  
+    <div class="icn">
+     <a routerLink="cart">
+        <button class="btn shadow-sm">
+            <i class="fas fa-cart-plus" style="font-size: 30px;"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+          </button>
+     </a>
+    </div>
+  </header>

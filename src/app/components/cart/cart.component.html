@@ -1,0 +1,55 @@
+<ng-container *ngIf="product.length!=0">
+<div class="container">
+    <div class="card-table">
+        <div class="cart-product">
+            <div class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Serial No</th>
+                        <th> Name</th>
+                        <th> Image</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of product; let i = index">
+                        <td>{{i+1}}</td>
+                        <td>{{item.title}}</td>
+                        <td><img src="{{item.image}}" alt=""></td>
+                        <td>{{item.description}}</td>
+                        <td>{{item.price}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>{{item.total}}</td>
+                        <td>
+                            <span  class="del"><i (click)="removeItem(item)" class="fas fa-trash-alt del"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td><button (click)="emptyCart()" class="btn btn-danger">Empty Cart</button></td>
+                        <td><button routerLink="/products" class="btn btn-primary">Shop More</button></td>
+                        <td><button class="btn btn-success">Check Out</button></td>
+                        <td><strong>Total : $ {{grandTotal}}</strong></td>
+                    </tr>
+                </tbody>
+            </div>
+        </div>
+    </div>
+</div>
+</ng-container>
+
+<ng-container *ngIf="product.length=== 0">
+    <h1>My Cart</h1>
+    <div class="container">
+        <div class="card">
+            <i class="fas fa-exclamation"></i>
+            <h3>Your Cart is empty</h3>
+            <h5>Add item to it now</h5>
+            <button><a href="products">Shop now</a></button>
+        </div>
+    </div>
+</ng-container>

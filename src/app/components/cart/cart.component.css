@@ -1,0 +1,44 @@
+h1{
+    margin: 2rem;
+}
+
+.card{
+    text-align: center;
+    padding: 4rem;
+    color: #452e10;
+    align-items: center;
+    justify-content: center;
+}
+i{
+    color: rgb(245, 10, 10);
+    font-size: 4rem;
+}
+
+.card button{
+    width: fit-content;
+    background-color: #ed6905;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.del{
+    background-color: none;
+    font-size: 1rem;
+}
+img{
+    width: 40%;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+@media only screen  and (max-width:1024px) and (min-width:80px){
+    td{
+        width: 20%;
+    }
+    img{
+        width: 45%;
+    }
+}
