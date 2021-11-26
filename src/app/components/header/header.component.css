@@ -87,4 +87,16 @@ button{
         width: 70%;
         height: 20%;
     }
+   .ifcp{
+       font-size: .9rem !important;
+       margin-bottom: .2rem;
+   }
+   .bbd{
+       font-size: .5rem !important;
+   }
+   .btn{
+       padding: .1rem;
+       display: flex;
+       flex-direction: column;
+   }
 }

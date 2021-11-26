@@ -166,6 +166,10 @@ button{
     .card-top{
         margin: 0rem;
     }
+    .card-top h6{
+        font-size: .6rem;
+        margin: .1rem 0;
+    }
     .card-top ul li{
         width: 60%;
         padding: .4rem;
