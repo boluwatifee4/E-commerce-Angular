@@ -54,6 +54,7 @@
     align-items: center;
 }
 .card-top ul li{
+    border-top: none !important;
     border: 0.1rem solid #dbdad5;
     padding: .8rem;
     font-size: 1rem;
@@ -66,7 +67,7 @@ li img{
 }
 
 .card-top ul li:hover{
-    box-shadow: 0px 50px 30px rgb(2 43 105 / 5%);
+    box-shadow: 0px 40px 30px rgb(2 43 105 / 5%);
     transition: 1s ease-in-out;
     border-radius: 1rem;
     font-size: 1.2rem;

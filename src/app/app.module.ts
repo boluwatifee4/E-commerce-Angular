@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PDetailsComponent } from './components/p-details/p-details.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { APP_INITIALIZER } from '@angular/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,15 @@ import { environment } from '../environments/environment';
       registrationStrategy: 'registerWhenStable:30000'
     })
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER, 
+      useValue: () =>  new Promise(resolve =>
+        setTimeout(resolve, 3500)
+      ),
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
