@@ -3,7 +3,7 @@ This is a project based angular e-commerce website, it consists of basic feature
 [Link:](https://boluwatifee4.github.io/E-commerce-Angular/).
 
 * * *
-<img src="assets/demo1.png"/>
+<img src="atc\src\assets\demo1.png"/>
 <img src="assets/demo2.png"/>
 <img src="assets/demo3.png"/>
 <img src="assets/demo4.png"/>
