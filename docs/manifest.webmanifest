@@ -2,7 +2,7 @@
   "name": "atc",
   "short_name": "atc",
   "theme_color": "#1976d2",
-  "background_color": "#010a03",
+  "background_color": "#000000",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
