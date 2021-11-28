@@ -10,6 +10,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { CartComponent } from './components/cart/cart.component';
 import { FilterPipe } from './shared/filter.pipe'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PDetailsComponent } from './components/p-details/p-details.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,14 +20,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CardComponent,
     ProductComponent,
     CartComponent,
-    FilterPipe
+    FilterPipe,
+    PDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

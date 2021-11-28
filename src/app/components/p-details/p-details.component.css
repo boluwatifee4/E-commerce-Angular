@@ -1,0 +1,23 @@
+.bdy{
+    margin: 3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 40%;
+}
+a{
+    margin:1rem .7rem;
+    color: white;
+    background-color: rgb(224, 92, 15);
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .7rem;
+}
+@media only screen  and (max-width:1024px) and (min-width:80px){
+    .bdy{
+        flex-direction: column;
+
+    }
+}

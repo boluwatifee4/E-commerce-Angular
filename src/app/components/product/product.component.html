@@ -36,14 +36,32 @@
 
 <div class="ctn wears">
     <div class="rw">
+        
         <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title' " class="r">
             <div class="card  ">
                 <img src="{{item.image}}" alt="">
                 <h5>{{item.title}}</h5>
                 <p>{{item.description}}</p>
+                <h6>
+                    <a  (click)="addTopd(item)" style="text-decoration: underline;">View details....</a>
+                </h6>
                 <h6><Strong>Price:</Strong> ${{item.price}}</h6>
-                <button class="btn" (click)="addToCart(item)">Add To Cart</button>
+                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn" (click)="addToCart(item)">Add To Cart</button>
             </div>
         </ng-container>
     </div>
 </div>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Bima Stores</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Added To Cart 😍</p>
+        </div>
+      </div>
+    </div>
+  </div>
