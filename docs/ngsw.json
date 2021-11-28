@@ -1,0 +1,89 @@
+{
+  "configVersion": 1,
+  "timestamp": 1638067841252,
+  "index": "/E-commerce-Angular/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/E-commerce-Angular/favicon.ico",
+        "/E-commerce-Angular/index.html",
+        "/E-commerce-Angular/main.a4649b956960643d.js",
+        "/E-commerce-Angular/manifest.webmanifest",
+        "/E-commerce-Angular/polyfills.8b0f6a371e5cdaac.js",
+        "/E-commerce-Angular/runtime.2eca8a587e535968.js",
+        "/E-commerce-Angular/styles.58024445aa532a2b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/E-commerce-Angular/assets/all-items.png",
+        "/E-commerce-Angular/assets/electronics.jpg",
+        "/E-commerce-Angular/assets/fashion.jpg",
+        "/E-commerce-Angular/assets/icons/icon-128x128.png",
+        "/E-commerce-Angular/assets/icons/icon-144x144.png",
+        "/E-commerce-Angular/assets/icons/icon-152x152.png",
+        "/E-commerce-Angular/assets/icons/icon-192x192.png",
+        "/E-commerce-Angular/assets/icons/icon-384x384.png",
+        "/E-commerce-Angular/assets/icons/icon-512x512.png",
+        "/E-commerce-Angular/assets/icons/icon-72x72.png",
+        "/E-commerce-Angular/assets/icons/icon-96x96.png",
+        "/E-commerce-Angular/assets/jewelry.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/E-commerce-Angular/assets/all-items.png": "60631ba485e012eeb6d83d58a66f07717f77b972",
+    "/E-commerce-Angular/assets/electronics.jpg": "166393d09ea9cfb0f3dc3dfdb690d9138e093355",
+    "/E-commerce-Angular/assets/fashion.jpg": "2ef3f692f3b045b7afa1dfc0643e105bce2d511e",
+    "/E-commerce-Angular/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/E-commerce-Angular/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/E-commerce-Angular/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/E-commerce-Angular/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/E-commerce-Angular/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/E-commerce-Angular/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/E-commerce-Angular/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/E-commerce-Angular/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/E-commerce-Angular/assets/jewelry.jpg": "710224823314fcd7fb9c7c508f559cbe7fff383b",
+    "/E-commerce-Angular/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/E-commerce-Angular/index.html": "b41a6a8279a963f10fe6dd81e650b1715b758c0d",
+    "/E-commerce-Angular/main.a4649b956960643d.js": "0d8eb9763ca3de66c5d2648e7094ca94c8827474",
+    "/E-commerce-Angular/manifest.webmanifest": "db3d6750649c88bda000ed95bad6c1a2aab00b27",
+    "/E-commerce-Angular/polyfills.8b0f6a371e5cdaac.js": "56f10ea57bad4a4747d1be5e2387c69ad7756a63",
+    "/E-commerce-Angular/runtime.2eca8a587e535968.js": "8889c8af2d083627e742a0c9a1f0ccbb91e4ae83",
+    "/E-commerce-Angular/styles.58024445aa532a2b.css": "cbbd70859a8324ca3f6ebd3c03ba5bc18c5e8dfd"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
