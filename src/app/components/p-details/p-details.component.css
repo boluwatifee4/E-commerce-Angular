@@ -14,6 +14,18 @@ a{
     font-size: 1rem;
     border-radius: 5px;
     padding: .7rem;
+    text-decoration: none;
+}
+.btn{
+    background-color: rgb(224, 92, 15);
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+h5, p{
+    margin: 1rem 0;
 }
 @media only screen  and (max-width:1024px) and (min-width:80px){
     .bdy{

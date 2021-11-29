@@ -8,6 +8,7 @@
             <h5>{{item.title}}</h5>
             <p>{{item.description}}</p>
             <h6><Strong>Price:</Strong>{{item.price}}</h6>
+            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn" (click)="addToCart(item)">Add To Cart</button>
         </div>
     </div>
 </div>

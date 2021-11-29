@@ -18,4 +18,9 @@ export class PDetailsComponent implements OnInit {
       })
     }
 
+    addToCart(item:any){
+      this.cartService.addToCart(item)
+      
+    }
+
 }
