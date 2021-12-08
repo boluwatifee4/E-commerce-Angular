@@ -8,13 +8,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+
 public productList : any ;
 public productLis : any ;
 public filterCategory:  any;
 
 searchKey:string =""
+
+// Imjecting cart service
   constructor(private api: ApiService, private cartService : CartService,private router: Router) { }
 
+  //function to add to cart and filtering products on initialization
   ngOnInit(): void {
     this.api.getProduct()
     .subscribe(res=>{
@@ -31,14 +35,7 @@ searchKey:string =""
     this.api.getProduct()
     .subscribe(res=>{
       this.productLis = res ;
-      // this.filterCategory = res
-      // this.productList.forEach((a:any) => {
-      //   if(a.category === "women's clothing" || a.category === "men's clothing" ){
-      //     a.category = "fashion"
-      //   }
-      //   Object.assign(a,{quantity:1,total:a.price})
-      // });
-      // console.log(this.productList)
+      
     })
     this.cartService.search.subscribe(val=>{
       this.searchKey = val
@@ -49,13 +46,7 @@ searchKey:string =""
     this.cartService.addToCart(item)
     
   }
-  addToCar(item:any){
-    this.cartService.addToCar(item)
-  }
-  addTopd(item:any){
-    this.cartService.addToCar(item)
-    this.router.navigate(['pd'])
-  }
+
   filter(category:string){
     this.filterCategory = this.productList
     .filter((a:any)=>{
@@ -63,5 +54,14 @@ searchKey:string =""
         return a;
       }
     })
+  }
+
+  // this is to view product details..
+  addToCar(item:any){
+    this.cartService.addToCar(item)
+  }
+  addTopd(item:any){
+    this.cartService.addToCar(item)
+    this.router.navigate(['pd'])
   }
 }

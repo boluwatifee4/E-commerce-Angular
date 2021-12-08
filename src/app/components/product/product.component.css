@@ -87,14 +87,7 @@ h6{
 .wears{
     margin-top: 5rem;
 }
-/* .row h5, p{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100ch;
-    color: #452e10;
-    
-} */
+
 h5, p{
     white-space: nowrap;
     overflow: hidden;
@@ -130,11 +123,6 @@ h5, p{
     object-fit: contain;
 }
 
-/* .row{
-    gap: 2rem;
-    display: flex;
-    justify-content: space-around;
-} */
 button{
     background-color: #ed6905;
     color: white;
@@ -150,6 +138,8 @@ i{
 a{
     cursor: pointer;
 }
+
+/* -----------RESPONSIVEMESS-------------- */
 
 @media only screen  and (max-width:1024px) and (min-width:80px){
     .rw{

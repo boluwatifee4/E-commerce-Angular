@@ -13,6 +13,7 @@ export class CartService {
   public search = new BehaviorSubject<string>("");
   constructor() { }
 
+  //  Creating All Basic Functions To Use A cross The App
   getProducts(){
     return this.productList.asObservable()
   }
@@ -24,21 +25,13 @@ export class CartService {
     this.cartItemList.push(...product)
     this.productList.next(product)
   }
-  setProduc(product: any){
-    this.cartItemLis.push(...product)
-    this.productLis.next(product)
-  }
+  
 
   addToCart(product: any){
     this.cartItemList.push(product)
     this.productList.next(this.cartItemList)
     this.getTotalPrice()
     console.log(this.cartItemList)
-  }
-  addToCar(product: any){
-    this.cartItemLis.push(product)
-    this.productLis.next(this.cartItemLis)
-    console.log(this.cartItemLis)
   }
 
   getTotalPrice() : number{
@@ -62,4 +55,21 @@ export class CartService {
     this.cartItemList = [];
     this.productList.next(this.cartItemList) 
   }
+  //<---------- This are functions for viewing details------------>
+  setProduc(product: any){
+    this.cartItemLis.push(...product)
+    this.productLis.next(product)
+  }
+
+  addToCar(product: any){
+    this.cartItemLis.push(product)
+    this.productLis.next(this.cartItemLis)
+    console.log(this.cartItemLis)
+  }
+
+    removeAllCar(){
+    this.cartItemLis = [];
+    this.productLis.next(this.cartItemLis) 
+  }
+//---------------- End of view detais function------------------>
 }

@@ -40,6 +40,8 @@ a{
     text-decoration: none;
     color:white;
 }
+
+/* -----------RESPONSIVEMESS-------------- */
 @media only screen  and (max-width:1024px) and (min-width:80px){
     td{
         width: 20%;

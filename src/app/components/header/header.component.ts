@@ -8,8 +8,11 @@ import { NgModule } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  
  public totalItem : number = 0;
  public searchTerm: string = "";
+
+ // for toggling search icon on media view
  icon:boolean=false;
    modal:boolean=true;
     iconFunction(){
@@ -23,6 +26,8 @@ export class HeaderComponent implements OnInit {
       this.icon=false;
      
   }
+
+  // injecting cartService for search box
   constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
